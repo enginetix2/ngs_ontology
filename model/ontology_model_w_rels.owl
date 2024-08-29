@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Vendor"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Loadout"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Connection"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Location"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Cost"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Decision"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Risk"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Statement (Requirement)"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Time"/>
+    <rdfs:comment>Vaneman et al. (2022)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#subclasses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Connection"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#definition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Vendor"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Loadout"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Connection"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Location"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Cost"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Decision"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Risk"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Statement (Requirement)"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Time"/>
+    <rdfs:comment>A system that is able to host other systems, including vehicles and weapons.</rdfs:comment>
+    <rdfs:comment>An organization that designs and produces air vehicles, weapons, and other systems.</rdfs:comment>
+    <rdfs:comment>A specific configuration of weapons and systems on an air vehicle.</rdfs:comment>
+    <rdfs:comment>A quality or feature that distinguishes a particular entity, such as an air vehicle or weapon.</rdfs:comment>
+    <rdfs:comment>A logical or physical conduit linking two or more entities.</rdfs:comment>
+    <rdfs:comment>A specific geographical or logical location for an entity.</rdfs:comment>
+    <rdfs:comment>An amount that must be paid or spent to acquire or maintain an entity.</rdfs:comment>
+    <rdfs:comment>A conclusion or resolution reached after consideration, often affecting entities in the system.</rdfs:comment>
+    <rdfs:comment>The potential of an adverse event occurring, impacting the system.</rdfs:comment>
+    <rdfs:comment>A formal expression of a condition or capability required by an entity in the system.</rdfs:comment>
+    <rdfs:comment>A temporal reference for events, actions, or states within the system.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Statement (Requirement)">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Vendor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#relationships">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Vendor"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Loadout"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Cost"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Decision"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Risk"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Statement (Requirement)"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Time"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Connection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#data_types">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Vendor"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Loadout"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Characteristic"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Cost"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Decision"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Risk"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Statement (Requirement)"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Time"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Cost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Risk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Loadout">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Characteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Time">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Platform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Decision">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
