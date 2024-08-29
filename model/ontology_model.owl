@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/ontology#Derived">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Requirement"/>
+    <rdfs:comment>Requirements that result from the analysis and allocation of technical requirements to logical functional architectures.</rdfs:comment>
+    <ex:source>AcqNotes (2023)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Skill">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Characteristic"/>
+    <rdfs:comment>The ability coming from one’s knowledge, practice, aptitude, etc. to do something well.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Skill"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Function">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Action"/>
+    <rdfs:comment>Constitutes a specific or discrete action required to achieve a desired objective.</rdfs:comment>
+    <rdfs:comment>A specific or discrete action required to achieve a desired objective.</rdfs:comment>
+    <ex:source>Blanchard and Fabrycky (2011)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Risks">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Risk"/>
+    <rdfs:comment>The potential that something will go wrong as a result of one or a series of events.</rdfs:comment>
+    <rdfs:comment>The combined effect of the probability of occurrence and the assessed consequence given the occurrence.</rdfs:comment>
+    <ex:source>Vaneman et al. (2022)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Risks"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MOP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Measure"/>
+    <rdfs:comment>The measures that characterize physical or functional attributes relating to the system operation measured or estimated under specific testing and/or operational environment conditions.</rdfs:comment>
+    <rdfs:comment>Measures that characterize physical or functional attributes of the system.</rdfs:comment>
+    <ex:source>Roedler and Jones (2005)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MOP"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#SubSystem">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A functional grouping of components that combine to perform a major function within an element.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Characteristic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#TPM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Measure"/>
+    <rdfs:comment>Metrics which measure the attributes of a system element to determine how well a system or system element is satisfying or expected to satisfy a technical requirement or goal.</rdfs:comment>
+    <rdfs:comment>Metrics to determine how well a system satisfies technical requirements.</rdfs:comment>
+    <ex:source>Roedler and Jones (2005)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#TPM"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Regulations">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Governance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>An agency statement of general applicability and future effect.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Standard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Artifact"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Statement"/>
+    <rdfs:comment>A formal agreement documenting generally accepted specifications or criteria for products, processes, procedures, policies, systems, and/or personnel.</rdfs:comment>
+    <rdfs:comment>The set of rules governing the arrangement, interaction, and interdependence of parts or elements of the system or model of the system.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+    <ex:source>Vaneman et al. (2022)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Virtual">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Location"/>
+    <rdfs:comment>A Virtual entity specifies a location within a digital network.</rdfs:comment>
+    <ex:source>LML v1.4 (2022)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#AddressGeolocation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Physical"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A location on, above, or below the surface.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#JointCapabilities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The ability to execute a specified course of action at the Joint Level.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Risk">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Governance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Artifact"/>
+    <rdfs:comment>The set of rules, policies, and decision-making criteria that will guide the SoS to achieving its goals and objectives.</rdfs:comment>
+    <ex:source>Vaneman et al. (2022)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Performer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Resource"/>
+    <rdfs:comment>Any entity – human, automated, or any aggregation of human and/or automated – that performs an activity and provides a capability.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Mission">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Guidance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The task together with the purpose that clearly indicates the action to be taken and the reason.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Maintenance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Activity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Actions taken to retain materiel in a serviceable condition or to restore it to serviceability.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MOE">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Measure"/>
+    <rdfs:comment>The 'operational' measures of success that are closely related to the achievement of the mission or operation being evaluated in the intended operational environment under a specified set of conditions.</rdfs:comment>
+    <rdfs:comment>Measures of success that are closely related to the achievement of the mission or operation.</rdfs:comment>
+    <ex:source>Roedler and Jones (2005)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#MOE"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#EnvironmentalState">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Condition"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The state of an environment or situation in which a Performer performs or is disposed to perform.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Resource"/>
+    <rdfs:comment>A specific real-world assemblage of people and other resources organized for an ongoing purpose.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Organization"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Plans">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Guidance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A set of activities that result in a goal, desired effect, outcome, or objective.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MemorandumOfUnderstanding">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Agreement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>De facto agreement generally recognized by all partners as binding.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#UserPerson">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Performer"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Any entity -- human, automated, or any aggregation of human and/or automated -- that performs an activity and provides a capability.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Policy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Governance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A course of action, guiding principle, or procedure considered expedient, prudent, or advantageous.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Condition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Characteristic"/>
+    <rdfs:comment>The state of an environment or situation in which a Performer performs.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Cost">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Cost"/>
+    <rdfs:comment>An amount that has to be paid or spent to buy or obtain something.</rdfs:comment>
+    <ex:source>Vaneman et al. (2022)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Cost"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Orbital">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Location"/>
+    <rdfs:comment>An Orbital entity specifies a location along an orbit around a celestial body.</rdfs:comment>
+    <rdfs:comment>A location along an orbit around a celestial body.</rdfs:comment>
+    <ex:source>LML v1.4 (2022)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Orbital"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#DefensePlanningGuidance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Guidance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The product of the planning programming budgeting and execution process’ planning phase.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#System">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A functionally, physically, and/or behaviorally related group of regularly interacting or interdependent elements.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#KPP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Measure"/>
+    <rdfs:comment>Key Performance Parameters are a special case of Measures of Effectiveness that are so critical that failure to achieve the KPP may result in program cancellation or significant program restructuring.</rdfs:comment>
+    <rdfs:comment>Key Performance Parameters that are critical to mission success.</rdfs:comment>
+    <ex:source>Roedler and Jones (2005)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#KPP"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ProgramActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Program"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A directed funded effort that provides a new, improved, or continuing materiel weapon or information system or service capability in response to an approved need.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Facility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Installation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A real property entity consisting of underlying land and one or more of the following: a building, a structure, a utility system, or pavement.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Site">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Installation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Physical (geographic) location that is or was owned by, leased to, or otherwise possessed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Installation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Resource"/>
+    <rdfs:comment>A military or industrial establishment.</rdfs:comment>
+    <ex:source>Vaneman et al. (2022)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Training">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Activity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>To make proficient by instruction and practice in particular knowledge or skills.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Program">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Program"/>
+    <rdfs:comment>The process for controlling the cost, schedule, and performance of a project or group of projects to achieve a stated goal.</rdfs:comment>
+    <ex:source>AcqNotes (2023)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#FunctionalRequirements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Derived"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Describe qualitatively the system functions or tasks to be performed in operation.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Platform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Asset"/>
+    <rdfs:comment>A system that is able to host other systems.</rdfs:comment>
+    <ex:source>Vaneman et al. (2022)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#TestProcess">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The process of evaluating and verifying data under fully controlled and traceable conditions.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Capabilities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Action"/>
+    <rdfs:comment>The ability to achieve a desired effect under specified (performance) standards and conditions through combinations of ways and means (activities and resources) to perform a set of activities.</rdfs:comment>
+    <rdfs:comment>The ability to achieve a desired effect under specified conditions.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Capabilities"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Service">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Asset"/>
+    <rdfs:comment>A mechanism to enable access to a set of one or more capabilities where the access is provided using a prescribed interface and is exercised consistent with constraints and policies as specified by the service description.</rdfs:comment>
+    <rdfs:comment>A mechanism to enable access to a set of one or more capabilities.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Service"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Originating">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Requirement"/>
+    <rdfs:comment>Requirements that are the cornerstone upon which the systems engineering process is based.</rdfs:comment>
+    <ex:source>Buede (2009)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MemorandumOfAgreement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Agreement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>An agreement in principle as to how a program will be administered.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#OperationalActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Activity"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>An action performed in conducting the business of an enterprise.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#ServiceFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>White box implementation of the activities of the service.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Component">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A part or combination of parts having a specific function.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Doctrine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Guidance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>The body of principles by which an enterprise seeks to guide its activities.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Requirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#StrategicObjectivesAndPolicies">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Guidance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A long-term plan to achieve preset goals.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#IPAddress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Virtual"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A location within a digital network.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#JointCapabilitiesAreasDocument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>High-level capabilities specified at the joint level.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Assembly">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A portion of a system or subsystem that can be provisioned and replaced as an entity.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Agreement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Artifact"/>
+    <rdfs:comment>A consent among parties regarding the terms and conditions of activities that said parties participate in.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#SubAssembly">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Platform"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Two or more parts joined to form a unit that is capable of being disassembled.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#SOAFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A distinct part of the functionality provided by a technical system.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Measure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Guidance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Artifact"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Statement"/>
+    <rdfs:comment>An authoritative document intended to lead or steer the execution of actions.</rdfs:comment>
+    <rdfs:comment>An authoritative statement intended to lead or steer the execution of actions.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#OperationalCondition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Condition"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A statement of the values or states needed for the execution of actions within the processes and transactions of an enterprise.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#TechnicalStandard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Technical standards document specific technical methodologies and practices.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#PerformanceRequirement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Originating"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Define quantitatively the extent or how well and under what conditions a function or task is to be performed.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Task">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>An action, activity, or undertaking enabling missions, activities, or functions to be performed or accomplished.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Activity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Action"/>
+    <rdfs:comment>Work not specific to a single organization, weapon system, or individual that transforms inputs (Resources) into outputs (Resources) or changes their state.</rdfs:comment>
+    <ex:source>DOD (2010)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Resource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Directives">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Guidance"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>An authoritative statement intended to impel actions and the achievement of goals.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#SystemFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Function"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A function that is performed by a system.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Physical">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/ontology#Location"/>
+    <rdfs:comment>A Physical entity specifies a location on, above, or below the surface.</rdfs:comment>
+    <ex:source>LML v1.4 (2022)</ex:source>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#MissionEssentialTaskList">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/ontology#Standard"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>A list of mission-essential tasks selected by a commander.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Asset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Action">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Statement">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/ontology#Artifact">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+</rdf:RDF>
