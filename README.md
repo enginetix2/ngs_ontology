@@ -55,4 +55,4 @@ Contributions to this ontology model are welcome. Please submit pull requests or
 
 ## Contact
 
-For questions or further information, please contact [John DeHart](mailto:jdehart@avian.com).
+For questions or further information, please contact [John DeHart](mailto:enginetix@gmail.com).
